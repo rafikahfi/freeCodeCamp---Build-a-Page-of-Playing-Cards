@@ -1,0 +1,82 @@
+body {
+  background-color: plum;
+  padding: 20px;
+}
+
+#playing-cards {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  height: 400px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.red {
+  color: red;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  align-items: flex-start;
+  align-self: flex-start;
+  width: 20%;
+  /* border: 2px solid black; */
+}
+
+.middle {
+  display: flex;
+  font-size: 5rem;
+  width: 60%;
+  /* border: 2px solid black; */
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right {
+  font-size: 2rem;
+  flex-direction: column;
+  display: flex;
+  width: 20%;
+  align-items: flex-end;
+  align-self: flex-end;
+  /* border: 2px solid black; */
+}
+
+.letter-right {
+  order: 1;
+  transform: rotate(180deg);
+}
+
+.logo-right {
+  order: 0;
+  transform: rotate(180deg);
+}
+
+.logo-middle-last {
+  transform: rotate(180deg);
+}
+
+.logo-middle-top,
+.logo-middle-bottom {
+  display: flex;
+}
